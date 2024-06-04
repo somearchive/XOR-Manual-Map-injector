@@ -4,7 +4,7 @@ xor.__index = xor
 function xor.new(key, block_size)
     local instance = setmetatable({
         key = key,
-        block_size = block_size or 4096  -- Блок по умолчанию 4096 байт
+        block_size = block_size or 4096
     }, xor)
     return instance
 end
